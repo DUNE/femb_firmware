@@ -1,0 +1,7 @@
+{
+	"common_dir" : "D:/share/ProtoDUNE/FPGA/ADC_ASIC_CTST_FPGA/",
+	"acds_version" : "Version 16.1.0",
+	"platform" : "windows",
+	"os" : "Windows 7",
+	"qpf" : "ADC_ASIC_CTST_FPGA.qpf"
+}

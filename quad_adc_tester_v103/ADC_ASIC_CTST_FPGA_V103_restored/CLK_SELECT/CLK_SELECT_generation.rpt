@@ -1,0 +1,18 @@
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\share\ProtoDUNE\FPGA\ADC_ASIC_CTST_FPGA\CLK_SELECT.qsys --synthesis=VHDL --output-directory=D:\share\ProtoDUNE\FPGA\ADC_ASIC_CTST_FPGA\CLK_SELECT\synthesis --family="Cyclone IV GX" --part=EP4CGX50DF27C7
+Progress: Loading ADC_ASIC_CTST_FPGA/CLK_SELECT.qsys
+Progress: Reading input file
+Progress: Adding altclkctrl_0 [altclkctrl 16.1]
+Progress: Parameterizing module altclkctrl_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+: CLK_SELECT.altclkctrl_0: Targeting device family: Cyclone IV GX.
+: CLK_SELECT.altclkctrl_0: Global clock network allows a clock signal to reach all parts of the chip with the same amount of skew. Input port 'clkselect' can be used to switch between four clock inputs.
+Info: CLK_SELECT: Generating CLK_SELECT "CLK_SELECT" for QUARTUS_SYNTH
+Info: altclkctrl_0: Generating top-level entity CLK_SELECT_altclkctrl_0.
+Info: altclkctrl_0: "CLK_SELECT" instantiated altclkctrl "altclkctrl_0"
+Info: CLK_SELECT: Done "CLK_SELECT" with 2 modules, 2 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
