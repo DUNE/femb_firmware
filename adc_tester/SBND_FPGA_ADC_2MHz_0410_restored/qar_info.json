@@ -1,0 +1,7 @@
+{
+	"common_dir" : "F:/P1_ADC_TEST/firmware/",
+	"acds_version" : "Version 15.1.0",
+	"platform" : "windows",
+	"os" : "Windows 7",
+	"qpf" : "DUNE_FPGA_P1_ADC_200MHz/SBND_FPGA.qpf"
+}
