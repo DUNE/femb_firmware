@@ -1,0 +1,518 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 15.0.0 Build 145 04/22/2015 SJ Full Version
+# Date created = 11:28:57  July 16, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		S_SKT_ADC_CHP_TST_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV GX"
+set_global_assignment -name DEVICE EP4CGX50DF27C7
+set_global_assignment -name TOP_LEVEL_ENTITY S_SKT_ADC_CHP_TST
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 15.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:28:57  JULY 16, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 672
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_BOARD_DESIGN_SYMBOL_TOOL "ViewDraw (Symbol)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VIEWDRAW -section_id eda_board_design_symbol
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name ENABLE_OCT_DONE OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_global_assignment -name CYCLONEIII_CONFIGURATION_DEVICE EPCS16
+set_global_assignment -name FORCE_CONFIGURATION_VCCIO ON
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_20MHZ
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+
+
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name CONFIGURATION_VCCIO_LEVEL AUTO
+set_instance_assignment -name IO_STANDARD LVDS -to COM_OUT
+set_location_assignment PIN_K23 -to COM_OUT
+set_location_assignment PIN_J23 -to "COM_OUT(n)"
+set_location_assignment PIN_R24 -to DAC_SELECT
+set_location_assignment PIN_F4 -to SFP_TX
+set_location_assignment PIN_G2 -to SFP_RX
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to SFP_RX
+set_location_assignment PIN_G1 -to "SFP_RX(n)"
+set_instance_assignment -name IO_STANDARD "1.5-V PCML" -to SFP_TX
+set_location_assignment PIN_F3 -to "SFP_TX(n)"
+set_location_assignment PIN_L10 -to REF_CLK4
+set_instance_assignment -name IO_STANDARD LVDS -to REF_CLK4
+set_location_assignment PIN_K10 -to "REF_CLK4(n)"
+set_location_assignment PIN_D1 -to JTAG_SEL
+set_location_assignment PIN_C1 -to ANALOG_SEL
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to JTAG_SEL
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to ANALOG_SEL
+set_location_assignment PIN_AE1 -to I2C_SDA_DIF_P
+set_location_assignment PIN_AE2 -to I2C_SDA_DIF_N
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to I2C_SDA_DIF_N
+set_instance_assignment -name CURRENT_STRENGTH_NEW "MAXIMUM CURRENT" -to I2C_SDA_DIF_P
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to "LBNE_HSTX:LBNE_HSTX_INST|Stream_EN"
+
+
+set_location_assignment PIN_AF13 -to ProtoDUNE_CLK
+set_location_assignment PIN_AF14 -to "ProtoDUNE_CLK(n)"
+set_location_assignment PIN_AC14 -to ProtoDUNE_CMD
+set_location_assignment PIN_AD14 -to "ProtoDUNE_CMD(n)"
+
+set_instance_assignment -name IO_STANDARD LVDS -to CLK_100MHz_OSC
+set_instance_assignment -name IO_STANDARD LVDS -to CLK_125MHz_OSC
+set_instance_assignment -name IO_STANDARD LVDS -to CLK_UDP_125MHz
+set_instance_assignment -name IO_STANDARD LVDS -to ProtoDUNE_CLK
+set_instance_assignment -name IO_STANDARD LVDS -to ProtoDUNE_CMD
+
+set_instance_assignment -name IO_STANDARD LVDS -to CLK_EXT
+set_instance_assignment -name IO_STANDARD "1.8 V" -to FE_RST_L
+set_location_assignment PIN_T14 -to CLK_100MHz_OSC
+set_location_assignment PIN_T15 -to "CLK_100MHz_OSC(n)"
+
+set_location_assignment PIN_T9 -to CLK_GXB_100MHz
+set_location_assignment PIN_U9 -to "CLK_GXB_100MHz(n)"
+
+set_location_assignment PIN_L9 -to CLK_UDP_125MHz
+set_location_assignment PIN_K9 -to "CLK_UDP_125MHz(n)"
+set_location_assignment PIN_L15 -to CLK_EXT
+set_location_assignment PIN_L14 -to "CLK_EXT(n)"
+
+set_location_assignment PIN_B18 -to DAC_CNTL[6]
+set_location_assignment PIN_A20 -to DAC_CNTL[5]
+set_location_assignment PIN_A19 -to DAC_CNTL[4]
+set_location_assignment PIN_A18 -to DAC_CNTL[3]
+set_location_assignment PIN_A17 -to DAC_CNTL[2]
+set_location_assignment PIN_A16 -to DAC_CNTL[1]
+set_location_assignment PIN_C17 -to DAC_CNTL[0]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DAC_CNTL[6]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DAC_CNTL[5]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DAC_CNTL[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DAC_CNTL[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DAC_CNTL[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DAC_CNTL[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to DAC_CNTL[0]
+
+set_instance_assignment -name IO_STANDARD "1.8 V" -to BRD_ID[4]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to BRD_ID[3]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to BRD_ID[2]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to BRD_ID[1]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to BRD_ID[0]
+set_location_assignment PIN_A25 -to BRD_ID[4]
+set_location_assignment PIN_A24 -to BRD_ID[3]
+set_location_assignment PIN_A23 -to BRD_ID[2]
+set_location_assignment PIN_B23 -to BRD_ID[1]
+set_location_assignment PIN_C22 -to BRD_ID[0]
+set_instance_assignment -name IO_STANDARD LVDS -to I2C_SCL_DIF_N
+set_instance_assignment -name IO_STANDARD LVDS -to I2C_SCL_DIF_P
+set_instance_assignment -name IO_STANDARD "BUS LVDS" -to I2C_SDA_DIF_N
+set_instance_assignment -name IO_STANDARD "BUS LVDS" -to I2C_SDA_DIF_P
+
+set_location_assignment PIN_AF2 -to I2C_SCL_DIF_P
+set_location_assignment PIN_AF3 -to I2C_SCL_DIF_N
+
+set_location_assignment PIN_P23 -to I2C_SCL
+set_location_assignment PIN_AC5 -to I2C_SCL_MISC
+set_location_assignment PIN_P24 -to I2C_SDA
+set_location_assignment PIN_AB5 -to I2C_SDA_MISC
+
+set_location_assignment PIN_AD24 -to MISC_IO[0]
+set_location_assignment PIN_AB21 -to MISC_IO[2]
+set_location_assignment PIN_AA21 -to MISC_IO[1]
+set_location_assignment PIN_Y21 -to MISC_IO[4]
+set_location_assignment PIN_AA22 -to MISC_IO[3]
+set_location_assignment PIN_P20 -to MISC_IO[5]
+set_location_assignment PIN_P19 -to MISC_IO[6]
+set_location_assignment PIN_R22 -to MISC_IO[7]
+
+set_location_assignment PIN_E9 -to OSC_CNTL3
+set_location_assignment PIN_D14 -to OSC_CNTL2
+set_location_assignment PIN_G23 -to OSC_CNTL1
+
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to OSC_CNTL1
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to OSC_CNTL2
+set_instance_assignment -name IO_MAXIMUM_TOGGLE_RATE "0 MHz" -to OSC_CNTL3
+
+set_instance_assignment -name IO_STANDARD LVDS -to CLK_DAQ
+set_location_assignment PIN_N25 -to CLK_DAQ
+set_location_assignment PIN_N26 -to "CLK_DAQ(n)"
+
+
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_CLK[0]
+#set_instance_assignment -name IO_STANDARD LVDS -to ADC_CS[0]
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_FD_0[0]
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_FD_0[1]
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_BUSY[0]
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_FF[0]
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_CONV[0]
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_eclk_RST_L
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_eclk_READ_L
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_eclk_IDXM_L
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_eclk_IDXL_L
+set_instance_assignment -name IO_STANDARD LVDS -to ADC_eclk_IDL_L
+set_instance_assignment -name IO_STANDARD "1.8 V" -to ASIC_CK[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to ASIC_CS[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to ASIC_SDI[0]
+set_instance_assignment -name IO_STANDARD "1.8 V" -to ASIC_SDO[0]
+
+
+
+
+
+
+
+set_location_assignment PIN_AA26 -to ADC_eclk_IDL_L
+set_location_assignment PIN_Y26 -to "ADC_eclk_IDL_L(n)"
+set_location_assignment PIN_A21 -to ASIC_CS[0]
+
+
+
+# P1 COL A
+
+set_location_assignment PIN_B17 -to ASIC_SDI[0]
+set_location_assignment PIN_B19 -to ASIC_CK[0]
+set_location_assignment PIN_A15 -to ASIC_SDO[0]
+#set_location_assignment PIN_AC26 -to 
+#set_location_assignment PIN_AC25 -to 
+set_location_assignment PIN_AB24 -to "ADC_CONV[0](n)"
+set_location_assignment PIN_AB23 -to ADC_CONV[0]
+set_location_assignment PIN_AF10 -to "ADC_FF[0](n)"
+set_location_assignment PIN_AE10 -to ADC_FF[0]
+set_location_assignment PIN_AF5 -to "ADC_FD_0[0](n)"
+set_location_assignment PIN_AF4 -to ADC_FD_0[0]
+set_location_assignment PIN_AA24 -to "ADC_eclk_IDXM_L(n)"
+set_location_assignment PIN_AA23 -to ADC_eclk_IDXM_L
+set_location_assignment PIN_V24 -to "ADC_eclk_IDXL_L(n)"
+set_location_assignment PIN_V23 -to ADC_eclk_IDXL_L
+#set_location_assignment PIN_AF19 -to 
+#set_location_assignment PIN_AE19 -to 
+#set_location_assignment PIN_AF16 -to
+#set_location_assignment PIN_AF15 -to 
+
+# P1 COL B
+
+set_location_assignment PIN_B22 -to ADC_PD[0]
+#set_location_assignment PIN_AE26 -to 
+#Set_location_assignment PIN_AE25 -to 
+set_location_assignment PIN_AC24 -to "ADC_CLK[0](n)"
+set_location_assignment PIN_AC23 -to ADC_CLK[0]
+set_location_assignment PIN_AF8 -to "ADC_BUSY[0](n)"
+set_location_assignment PIN_AF7 -to ADC_BUSY[0]
+set_location_assignment PIN_AE6 -to "ADC_FD_0[1](n)"
+set_location_assignment PIN_AE5 -to ADC_FD_0[1]
+#set_location_assignment PIN_AF6 -to 
+#set_location_assignment PIN_AE7 -to 
+set_location_assignment PIN_W25 -to "ADC_eclk_READ_L(n)"
+set_location_assignment PIN_W24 -to ADC_eclk_READ_L
+#set_location_assignment PIN_AF17 -to DAC1_SYNC
+#set_location_assignment PIN_AE17 -to DAC1_SCLK
+#set_location_assignment PIN_AE15 -to DAC2_DIN
+#set_location_assignment PIN_AE14 -to 
+#set_location_assignment PIN_AE21 -to 
+#set_location_assignment PIN_AD20 -to 
+
+
+# P1 COL C
+#
+#set_location_assignment PIN_AF24 -to MUX_A0_ADC2
+#set_location_assignment PIN_AF25 -to MUX_A1_ADC2
+#set_location_assignment PIN_AD5 -to 
+#set_location_assignment PIN_AD6 -to 
+#set_location_assignment PIN_AF11 -to ADC1_FF
+#set_location_assignment PIN_AF12 -to "ADC1_FF(n)"
+#set_location_assignment PIN_Y24 -to ADC1_CONV
+#set_location_assignment PIN_Y25 -to "ADC1_CONV(n)"
+set_location_assignment PIN_Y24 -to ADC_eclk_RST_L
+set_location_assignment PIN_Y25 -to "ADC_eclk_RST_L(n)"
+#set_location_assignment PIN_AC16 -to ADC_eclk_IDL_L
+#set_location_assignment PIN_AD16 -to "ADC_eclk_IDL_L(n)"
+#set_location_assignment PIN_AF20 -to SW_TST_ADC2
+#set_location_assignment PIN_AF21 -to PWR_EN_ADC2
+#set_location_assignment PIN_T24 -to ADC1_eclk_IDXM
+#set_location_assignment PIN_T25 -to "ADC1_eclk_IDXM(n)"
+#set_location_assignment PIN_U25 -to ADC1_eclk_RST
+#set_location_assignment PIN_U26 -to "ADC1_eclk_RST(n)"
+
+# P1 COL D
+
+#set_location_assignment PIN_AD25 -to ADC2_eclk_READ
+#set_location_assignment PIN_AD26 -to "ADC2_eclk_READ(n)"
+#set_location_assignment PIN_AD7 -to INA_SDA
+#set_location_assignment PIN_AD8 -to INA_SCL
+#set_location_assignment PIN_AC9 -to ADC2_FD[1]
+#set_location_assignment PIN_AD9 -to "ADC2_FD[1](n)"
+#set_location_assignment PIN_AE9 -to ADC1_BUSY
+#set_location_assignment PIN_AF9 -to "ADC1_BUSY(n)"
+#set_location_assignment PIN_AA25 -to ADC1_CLK
+#set_location_assignment PIN_AB26 -to "ADC1_CLK(n)"
+#set_location_assignment PIN_AE22 -to DAC1_DIN
+#set_location_assignment PIN_AF22 -to RST_FE1
+#set_location_assignment PIN_AC17 -to LED[0]
+#set_location_assignment PIN_AD17 -to LED[1]
+#set_location_assignment PIN_AE18 -to LED[2]
+#set_location_assignment PIN_AF18 -to LED[3]
+#set_location_assignment PIN_W26 -to ADC1_eclk_IDXL
+#set_location_assignment PIN_V26 -to "ADC1_eclk_IDXL(n)"
+
+#
+## P1 COL E
+#
+#set_location_assignment PIN_W22 -to T_SDI
+#set_location_assignment PIN_V21 -to T_SCK
+#set_location_assignment PIN_U23 -to T_CS
+#set_location_assignment PIN_V22 -to T_SDO
+#set_location_assignment PIN_T23 -to T_Drdy_N
+#set_location_assignment PIN_T22 -to MISC[0]
+#set_location_assignment PIN_U22 -to MISC[1]
+#set_location_assignment PIN_T21 -to MISC[2]
+#set_location_assignment PIN_T19 -to MISC[3]
+#set_location_assignment PIN_U19 -to MISC[4]
+#
+#
+## P1 COL F
+#
+#set_location_assignment PIN_C15 -to SPI_SDO_ADC1
+#set_location_assignment PIN_C14 -to SPI_SDI_ADC1
+#set_location_assignment PIN_D21 -to SPI_CS_ADC1
+#set_location_assignment PIN_D22 -to SPI_CK_ADC1
+#set_location_assignment PIN_C21 -to SPI_CK_FE2
+#set_location_assignment PIN_D16 -to SPI_CS_FE2
+#set_location_assignment PIN_E17 -to SPI_SDI_FE2
+#set_location_assignment PIN_A14 -to SPI_SDO_FE2
+#set_location_assignment PIN_D19 -to SPI_CK_FE1
+#set_location_assignment PIN_C20 -to SPI_CS_FE1
+#set_location_assignment PIN_D18 -to SPI_SDI_FE1
+#set_location_assignment PIN_C18 -to SPI_SDO_FE1
+#
+#
+#
+#
+#
+## P2 COL A
+#
+#set_location_assignment PIN_M26 -to "ADC4_eclk_READ(n)"
+#set_location_assignment PIN_M25 -to ADC4_eclk_READ
+#set_location_assignment PIN_L24 -to "ADC3_CONV(n)"
+#set_location_assignment PIN_L23 -to ADC3_CONV
+#set_location_assignment PIN_G22 -to "ADC3_FF(n)"
+#set_location_assignment PIN_F21 -to ADC3_FF
+#set_location_assignment PIN_A12 -to "ADC3_FD[0](n)"
+#set_location_assignment PIN_A13 -to ADC3_FD[0]
+#set_location_assignment PIN_F26 -to "ADC4_eclk_RST(n)"
+#set_location_assignment PIN_G26 -to ADC4_eclk_RST
+#set_location_assignment PIN_H26 -to "ADC3_eclk_IDXM(n)"
+#set_location_assignment PIN_H25 -to ADC3_eclk_IDXM
+#set_location_assignment PIN_A8 -to SW_TST_ADC3
+#set_location_assignment PIN_A9 -to PWR_EN_ADC3
+#set_location_assignment PIN_C4 -to MUX_A0_ADC3
+#set_location_assignment PIN_C5 -to MUX_A1_ADC3
+#set_location_assignment PIN_B26 -to "ADC3_eclk_IDL(n)"
+#set_location_assignment PIN_B25 -to ADC3_eclk_IDL
+#set_location_assignment PIN_B21 -to SPI_CS_ADC3
+#set_location_assignment PIN_A22 -to SPI_CK_ADC3
+#
+#
+## P2 COL B
+#
+#set_location_assignment PIN_K26 -to "ADC3_CLK(n)"
+#set_location_assignment PIN_J26 -to ADC3_CLK
+#set_location_assignment PIN_G25 -to "ADC3_BUSY(n)"
+#set_location_assignment PIN_H24 -to ADC3_BUSY
+#set_location_assignment PIN_B13 -to "ADC3_FD[1](n)"
+#set_location_assignment PIN_C13 -to ADC3_FD[1]
+#set_location_assignment PIN_B4 -to DAC3_SYNC
+#set_location_assignment PIN_A4 -to DAC3_SCLK
+#set_location_assignment PIN_E24 -to "ADC4_eclk_IDXL(n)"
+#set_location_assignment PIN_F24 -to ADC4_eclk_IDXL
+#set_location_assignment PIN_B6 -to DAC3_DIN
+#
+## set_location_assignment PIN_B7 -to 
+#
+#set_location_assignment PIN_D9 -to TST_SW3
+#set_location_assignment PIN_D10 -to TST_SW4
+#
+## set_location_assignment PIN_A2 -to 
+## set_location_assignment PIN_A3 -to 
+#
+#set_location_assignment PIN_C19 -to SPI_SDO_ADC3
+#set_location_assignment PIN_C16 -to RST_FE3
+#set_location_assignment PIN_B15 -to SPI_SDI_ADC3
+#
+#
+#				
+#
+## P2 COL C
+#
+#
+#set_location_assignment PIN_B5 -to INB_SDA
+#set_location_assignment PIN_A5 -to INB_SCL
+#set_location_assignment PIN_B11 -to ADC4_FD[1]
+#set_location_assignment PIN_A11 -to "ADC4_FD[1](n)"
+#set_location_assignment PIN_H22 -to ADC4_BUSY
+#set_location_assignment PIN_H23 -to "ADC4_BUSY(n)"
+#set_location_assignment PIN_L25 -to ADC4_CLK
+#set_location_assignment PIN_L26 -to "ADC4_CLK(n)"
+#set_location_assignment PIN_B10 -to MUX_A0_ADC4
+#set_location_assignment PIN_A10 -to MUX_A1_ADC4
+#set_location_assignment PIN_C12 -to PWR_EN_ADC4
+#set_location_assignment PIN_C11 -to SW_TST_ADC4
+#set_location_assignment PIN_C7 -to DAC4_SYNC
+#set_location_assignment PIN_C6 -to DAC4_SCLK
+#set_location_assignment PIN_D25 -to ADC3_eclk_RST
+#set_location_assignment PIN_D26 -to "ADC3_eclk_RST(n)"
+#set_location_assignment PIN_B2 -to DAC4_DIN
+#set_location_assignment PIN_B1 -to RST_FE4
+#
+## P2 COL D
+#
+#set_location_assignment PIN_C10 -to ADC4_FD[0]
+#set_location_assignment PIN_B9 -to "ADC4_FD[0](n)"
+#set_location_assignment PIN_F23 -to ADC4_FF
+#set_location_assignment PIN_G24 -to "ADC4_FF(n)"
+#set_location_assignment PIN_K24 -to ADC4_CONV
+#set_location_assignment PIN_J25 -to "ADC4_CONV(n)"
+#set_location_assignment PIN_N24 -to ADC4_eclk_IDXM
+#set_location_assignment PIN_M24 -to "ADC4_eclk_IDXM(n)"
+#set_location_assignment PIN_A7 -to LED[4]
+#set_location_assignment PIN_A6 -to LED[5]
+#set_location_assignment PIN_C9 -to LED[6]
+#set_location_assignment PIN_C8 -to LED[7]
+#set_location_assignment PIN_E25 -to ADC4_eclk_IDL
+#set_location_assignment PIN_E26 -to "ADC4_eclk_IDL(n)"
+#set_location_assignment PIN_D24 -to ADC3_eclk_READ
+#set_location_assignment PIN_C24 -to "ADC3_eclk_READ(n)"
+#set_location_assignment PIN_C25 -to ADC3_eclk_IDXL
+#set_location_assignment PIN_C26 -to "ADC3_eclk_IDXL(n)"
+#
+#
+## P2 COL E
+#
+#set_location_assignment PIN_L21 -to MISC[5]
+#set_location_assignment PIN_K20 -to MISC[6]
+#set_location_assignment PIN_L22 -to MISC[7]
+#set_location_assignment PIN_M22 -to MISC[8]
+#set_location_assignment PIN_N20 -to MISC[9]
+## set_location_assignment PIN_N19 -to 
+## set_location_assignment PIN_L19 -to
+## set_location_assignment PIN_M19 -to 
+## set_location_assignment PIN_N23 -to 
+## set_location_assignment PIN_N22 -to 
+#
+#
+#
+## P2 COL F
+#
+#set_location_assignment PIN_D20 -to SPI_SDO_FE4
+#set_location_assignment PIN_E21 -to SPI_SDI_FE4
+#set_location_assignment PIN_E22 -to SPI_CS_FE4
+#set_location_assignment PIN_E23 -to SPI_CK_FE4
+#set_location_assignment PIN_C23 -to SPI_CK_ADC4
+#set_location_assignment PIN_E20 -to SPI_CS_ADC4
+#set_location_assignment PIN_D23 -to SPI_SDI_ADC4
+#set_location_assignment PIN_B14 -to SPI_SDO_ADC4
+#set_location_assignment PIN_E16 -to SPI_CK_FE3
+#set_location_assignment PIN_D17 -to SPI_CS_FE3
+#set_location_assignment PIN_E15 -to SPI_SDI_FE3
+#set_location_assignment PIN_D15 -to SPI_SDO_FE3
+#
+#
+#
+#
+#
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name QIP_FILE tx_packet_fifo.qip
+set_global_assignment -name VHDL_FILE udp_io.vhd
+set_global_assignment -name VHDL_FILE tx_packet_fifo.vhd
+set_global_assignment -name VHDL_FILE tx_frame_2.vhd
+set_global_assignment -name SIP_FILE TSE_MAC_v16.sip
+set_global_assignment -name QIP_FILE TSE_MAC_v16.qip
+set_global_assignment -name QIP_FILE phase_pll.qip
+set_global_assignment -name VHDL_FILE ProtoDUNE_ADC_clk_gen.vhd
+set_global_assignment -name VHDL_FILE SBND_SYNC_START_STOP.vhd
+set_global_assignment -name QIP_FILE DPM_SAMP_WFM.qip
+set_global_assignment -name VHDL_FILE sfl_epcs.vhd
+set_global_assignment -name VHDL_FILE sys_rst.vhd
+set_global_assignment -name VHDL_FILE SBND_PWM_CLK_DECODER.vhd
+set_global_assignment -name VHDL_FILE I2C_slave_32bit_A16.vhd
+set_global_assignment -name SDC_FILE S_SKT_ADC_CHP_TST.sdc
+set_global_assignment -name QIP_FILE DPM_LBNE_REG.qip
+set_global_assignment -name QIP_FILE ALTGX_TX.qip
+set_global_assignment -name QIP_FILE alt_pll.qip
+set_global_assignment -name QIP_FILE ADV_SFL.qip
+set_global_assignment -name QIP_FILE ADC_FIFO.qip
+set_global_assignment -name VHDL_FILE SbndPkg.vhd
+set_global_assignment -name VHDL_FILE S_SKT_ADC_CHP_TST.vhd
+set_global_assignment -name VHDL_FILE SBND_registers.vhd
+set_global_assignment -name VHDL_FILE SBND_RDOUT_V1.vhd
+set_global_assignment -name VHDL_FILE SBND_PKT_GEN.vhd
+set_global_assignment -name VHDL_FILE SBND_ASIC_RDOUT_v2.vhd
+set_global_assignment -name VHDL_FILE SBND_PKT.vhd
+set_global_assignment -name VHDL_FILE SBND_HSTX.VHD
+set_global_assignment -name VHDL_FILE SBND_TST_PULSE.vhd
+set_global_assignment -name VHDL_FILE SBND_TS_AND_ADC_ERR.vhd
+set_global_assignment -name VHDL_FILE ProtoDUNE_ASIC_CNTRL.vhd
+set_global_assignment -name VHDL_FILE ProtoDUNE_ADC_CLK_TOP.vhd
+set_global_assignment -name QIP_FILE e_mux.qip
+set_global_assignment -name QIP_FILE ADC_PLL.qip
+set_global_assignment -name VHDL_FILE pll_phase_ENT.vhd
+set_global_assignment -name VHDL_FILE ADC_s_SKT_RDOUT.vhd
+set_global_assignment -name CDF_FILE output_files/Chain5.cdf

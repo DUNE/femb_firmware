@@ -1,0 +1,7 @@
+{
+	"common_dir" : "D:/share/ProtoDUNE/FPGA/ADC_CHIP_TEST_SINGLE_SKT_FPGA/",
+	"acds_version" : "Version 16.1.0",
+	"platform" : "windows",
+	"os" : "Windows 7",
+	"qpf" : "S_SKT_ADC_CHP_TST.qpf"
+}
