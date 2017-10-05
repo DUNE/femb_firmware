@@ -1,0 +1,7 @@
+{
+	"common_dir" : "D:/share/ProtoDUNE/FPGA/ProtoDUNE_FEMB_FPGA_NE/",
+	"acds_version" : "Version 16.1.0",
+	"platform" : "windows",
+	"os" : "Windows 7",
+	"qpf" : "ProtoDUNE_FEMB_FPGA.qpf"
+}

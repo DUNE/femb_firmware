@@ -1,0 +1,133 @@
+Restore Archived Project report for ProtoDUNE_FEMB_FPGA
+Thu Oct  5 13:11:15 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Thu Oct  5 13:11:15 2017 ;
+; Revision Name                   ; ProtoDUNE_FEMB_FPGA                   ;
+; Top-level Entity Name           ; ProtoDUNE_FEMB_FPGA                   ;
+; Family                          ; Cyclone IV GX                         ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored '/home/jhugon/dune/coldelectronics/femb_firmware/femb_protodune_v319/ProtoDUNE_FEMB_FPGA_V319.qar' into the '/home/jhugon/dune/coldelectronics/femb_firmware/femb_protodune_v319/ProtoDUNE_FEMB_FPGA_V319_restored/' directory
+Info: Generated report 'ProtoDUNE_FEMB_FPGA.restore.rpt'
+Info (23030): Evaluation of Tcl script /home/jhugon/intelFPGA_lite/16.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1049 megabytes
+    Info: Processing ended: Thu Oct  5 13:11:15 2017
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+
++---------------------------------------------+
+; Files Restored                              ;
++---------------------------------------------+
+; File Name                                   ;
++---------------------------------------------+
+; qar_info.json                               ;
+; ADC_FIFO.cmp                                ;
+; ADC_FIFO.qip                                ;
+; ADC_FIFO.vhd                                ;
+; ADC_PLL.cmp                                 ;
+; ADC_PLL.ppf                                 ;
+; ADC_PLL.qip                                 ;
+; ADC_PLL.vhd                                 ;
+; ADV_SFL.cmp                                 ;
+; ADV_SFL.qip                                 ;
+; ADV_SFL.vhd                                 ;
+; ALTGX_TX.cmp                                ;
+; ALTGX_TX.ppf                                ;
+; ALTGX_TX.qip                                ;
+; ALTGX_TX.vhd                                ;
+; DPM_LBNE_REG.cmp                            ;
+; DPM_LBNE_REG.qip                            ;
+; DPM_LBNE_REG.vhd                            ;
+; DPM_SAMP_WFM.cmp                            ;
+; DPM_SAMP_WFM.qip                            ;
+; DPM_SAMP_WFM.vhd                            ;
+; I2C_slave_32bit_A16.vhd                     ;
+; ProtoDUNE_ADC_CLK_TOP.vhd                   ;
+; ProtoDUNE_ADC_clk_gen.vhd                   ;
+; ProtoDUNE_ASIC_CNTRL.vhd                    ;
+; ProtoDUNE_FEMB_FPGA.qpf                     ;
+; ProtoDUNE_FEMB_FPGA.qsf                     ;
+; ProtoDUNE_FEMB_FPGA.sdc                     ;
+; ProtoDUNE_FEMB_FPGA.vhd                     ;
+; ProtoDUNE_FEMB_FPGA_assignment_defaults.qdf ;
+; SBND_ASIC_RDOUT_v2.vhd                      ;
+; SBND_HSTX.VHD                               ;
+; SBND_PKT.vhd                                ;
+; SBND_PKT_GEN.vhd                            ;
+; SBND_PWM_CLK_DECODER.vhd                    ;
+; SBND_RDOUT_V1.vhd                           ;
+; SBND_SYNC_START_STOP.vhd                    ;
+; SBND_TST_PULSE.vhd                          ;
+; SBND_TS_AND_ADC_ERR.vhd                     ;
+; SBND_registers.vhd                          ;
+; SbndPkg.vhd                                 ;
+; VER_ID.tcl                                  ;
+; Version_Reg.tcl                             ;
+; alt_pll.cmp                                 ;
+; alt_pll.ppf                                 ;
+; alt_pll.qip                                 ;
+; alt_pll.vhd                                 ;
+; e_mux.cmp                                   ;
+; e_mux.qip                                   ;
+; e_mux.vhd                                   ;
+; output_files/stp1.stp                       ;
+; phase_pll.cmp                               ;
+; phase_pll.ppf                               ;
+; phase_pll.qip                               ;
+; phase_pll.vhd                               ;
+; pll_phase_ENT.vhd                           ;
+; sfl_epcs.vhd                                ;
+; sys_rst.vhd                                 ;
+; version_reg.vhd                             ;
++---------------------------------------------+
+
+
++--------------------+
+; Files Not Restored ;
++--------------------+
+; File Name          ;
++--------------------+
+
+
